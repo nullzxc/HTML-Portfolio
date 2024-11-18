@@ -23,7 +23,7 @@
   </head>
   <body class="bg-white">
     <!-- Layer -->
-    <div class="w-full flex gap-2">
+    <div class="w-full hidden xl:flex gap-2">
       <!-- Left Column -->
       <div class="relative w-full flex flex-col">
         <div class="h-screen w-full pl-3 pb-3 pt-3 flex flex-col justify-end">
@@ -71,9 +71,13 @@
               src="/src/hero-3.jpg"
               alt=""
             />
-            <div class="border border-black/20 bg-black/10 rounded-full px-5 py-3 w-fit flex gap-3 items-center justify-center">
+            <div
+              class="border border-black/20 bg-black/10 rounded-full px-5 py-3 w-fit flex gap-3 items-center justify-center"
+            >
               <span class="relative inline-flex w-2 h-2">
-                <span class="absolute rounded-full bg-red-500 w-2 h-2 animate-ping"></span>
+                <span
+                  class="absolute rounded-full bg-red-500 w-2 h-2 animate-ping"
+                ></span>
                 <span class="absolute rounded-full bg-red-500 w-2 h-2"></span>
               </span>
               <span>Under Construction 🛠️</span>
@@ -97,7 +101,8 @@
         </div>
       </div>
     </div>
-    <div class="w-full h-screen pt-[80px] px-11 flex gap-3">
+    <!-- Work, Gallery, Hobbies -->
+    <div class="w-full pt-[80px] px-11 hidden xl:flex gap-3">
       <!-- Work -->
       <div class="w-full flex flex-col">
         <!-- <h2 class="text-4xl mb-3">Work</h2> -->
@@ -161,12 +166,13 @@
               src="https://i.pinimg.com/736x/13/79/e6/1379e6f3a240fcbe9738c28f2f1bc2ce.jpg"
               alt=""
             />
-            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white/40">Hiking</span>
+            <span
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white/40"
+              >Hiking</span
+            >
           </div>
           <div class="w-full h-[40vh] flex items-center justify-end rounded-xl">
-            <span class="text-7xl text-end">Things<br/>To</span>
-            
-
+            <span class="text-7xl text-end">Things<br />To</span>
           </div>
           <div class="w-full h-[40vh] rounded-xl relative">
             <img
@@ -174,8 +180,10 @@
               src="https://i.pinimg.com/736x/96/eb/6b/96eb6b1c17be3592ef2669b33536a708.jpg"
               alt=""
             />
-            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white/40">Cooking</span>
-
+            <span
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white/40"
+              >Cooking</span
+            >
           </div>
           <div class="w-full h-[40vh] rounded-xl relative">
             <img
@@ -183,8 +191,10 @@
               src="https://i.pinimg.com/736x/a2/2b/e7/a22be76392bf5944c10350f52595128a.jpg"
               alt=""
             />
-            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white/40">Meditation</span>
-
+            <span
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white/40"
+              >Meditation</span
+            >
           </div>
         </div>
       </div>
@@ -237,7 +247,10 @@
           <div
             class="w-full h-[40vh] flex items-center justify-start rounded-xl"
           >
-            <span class="text-7xl">I Like <br/> Do</span>
+            <span class="text-7xl"
+              >I Like <br />
+              Do</span
+            >
           </div>
           <div class="w-full h-[40vh] rounded-xl relative">
             <img
@@ -245,8 +258,10 @@
               src="https://i.pinimg.com/736x/80/48/ef/8048efe33e2c6bd56594e02b75ce3f71.jpg"
               alt=""
             />
-            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white/40">Piano</span>
-
+            <span
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white/40"
+              >Piano</span
+            >
           </div>
           <div class="w-full h-[40vh] rounded-xl relative">
             <img
@@ -254,8 +269,10 @@
               src="https://i.pinimg.com/736x/56/67/93/5667936906181a6fbe0501b471e2b5bd.jpg"
               alt=""
             />
-            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white/40">Coding</span>
-
+            <span
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white/40"
+              >Coding</span
+            >
           </div>
           <div class="w-full h-[40vh] rounded-xl relative">
             <img
@@ -263,11 +280,59 @@
               src="https://i.pinimg.com/736x/07/60/80/0760808be45d26b60bbffe7eb8a6a4dc.jpg"
               alt=""
             />
-            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-black/30">Journaling</span>
-
+            <span
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-black/30"
+              >Journaling</span
+            >
           </div>
         </div>
       </div>
+    </div>
+    <!-- Contact, Footer-->
+    <div class="w-full py-[80px] px-11 hidden xl:flex flex-col gap-3">
+      <h2 class="text-7xl mb-3">Socials</h2>
+      <div class="w-full flex justify-between">
+        <div class="flex gap-2">
+          <span class="px-4 py-2 border border-black rounded-full w-fit h-fit"
+            >UI/UX Designer</span
+          >
+          <span class="px-4 py-2 border border-black rounded-full w-fit h-fit"
+            >Front End Developer</span
+          >
+          <span class="px-4 py-2 border border-black rounded-full w-fit h-fit"
+            >Meditation Enthusiast</span
+          >
+        </div>
+        <div class="flex flex-col text-4xl gap-3">
+          <a href="https://github.com/nullzxc" target="_blank">Github</a>
+          <a href="https://www.instagram.com/lichtchu/" target="_blank"
+            >Instagram</a
+          >
+          <h3 class="text-black/50">Medium (coming soon)</h3>
+          <h3 class="text-black/50">Youtube (coming soon)</h3>
+        </div>
+      </div>
+
+      <hr class="my-4" />
+      <p class="text-black/50">
+        © Andre 2024. All content on this website is protected, and unauthorized
+        use or distribution is prohibited.
+      </p>
+    </div>
+    <!-- Mobile -->
+    <div class="h-screen xl:hidden flex flex-col gap-4 items-center justify-center">
+      <div
+        class="border border-black/20 bg-black/10 rounded-full px-5 py-3 w-fit flex gap-3 items-center justify-center"
+      >
+        <span class="relative inline-flex w-2 h-2">
+          <span
+            class="absolute rounded-full bg-red-500 w-2 h-2 animate-ping"
+          ></span>
+          <span class="absolute rounded-full bg-red-500 w-2 h-2"></span>
+        </span>
+        <span>Under Construction 🛠️</span>
+      </div>
+      <p>Try Desktop Version</p>
     </div>
   </body>
 </html>
